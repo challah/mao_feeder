@@ -61,10 +61,10 @@ void loop() {
     Serial.println("RTC lost confidence in the DateTime!");
   }
 
-  if ((now.Hour() == feed_time_hour) && (now.Minute() == feed_time_minutes)) {
+  //if ((now.Hour() == feed_time_hour) && (now.Minute() == feed_time_minutes)) {
     Serial.println("time is up\n");
     myStepper.step(one_circle_clockwise);
-  }
+  //}
   delay(check_time_interval); 
 }
 
